@@ -1,0 +1,24 @@
+/**
+ * # Style
+ *
+ *
+ */
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+table {
+  padding: 10px;
+  border: 1px dashed grey;
+}
+
+thead td {
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+table td {
+  text-align: center;
+}
