@@ -40,13 +40,15 @@
   </div>
 
   <select id="selector">
-    <option value="ots-table">OTS Table</option>
     <option value="ots-template">OTS Template</option>
+    <option value="ots-table" selected>OTS Table</option>
     <!-- add your page directory here -->
   </select>
 
   <div class="container">
-    <iframe class="iframe" id="iframe" src="./pages/ots-table"></iframe>
+    <iframe class="iframe" id="iframe">
+      The iframe source will be set dynamically using JavaScript (see '/assets/code.js#27').
+    </iframe>
   </div>
 
   <script src="assets/code.js"></script>
