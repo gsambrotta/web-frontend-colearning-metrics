@@ -11,6 +11,6 @@ var refs = {
 
 refs.selector.addEventListener('change', function (e) {
   var value = e.target.value;
-  var pageUrl = '/pages/' + value;
+  var pageUrl = './pages/' + value;
   refs.iframe.setAttribute('src', pageUrl);
 });
