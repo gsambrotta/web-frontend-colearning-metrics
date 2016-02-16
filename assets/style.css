@@ -1,0 +1,46 @@
+/**
+ * # Style
+ *
+ *
+ */
+
+.title {
+  text-align: center;
+  background: #085987;
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+.text {
+  width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.link {
+  display: block;
+  text-align: center;
+}
+
+.guide {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+  font-style: italic;
+  text-decoration: none;
+  color: #1F9FE3;
+}
+
+.container {
+  width: 100%;
+  height: 600px;
+  min-height: 600px;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
