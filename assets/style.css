@@ -4,6 +4,10 @@
  *
  */
 
+body {
+  font-family: sans-serif;
+}
+
 .title {
   text-align: center;
   background: #085987;
@@ -29,7 +33,6 @@
   font-size: 1.1rem;
   text-align: center;
   font-style: italic;
-  text-decoration: none;
   color: #1F9FE3;
 }
 
