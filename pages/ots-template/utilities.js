@@ -20,7 +20,7 @@ function getData (callback) {
     var data = JSON.parse(xhr.responseText);
     // formatting data
     var rows = data.feed.entry.map(function (entry) {
-      var date = entry.title.$t.replace(/(\d+).(\d+).(\d+)/, '$3.$2.$1');
+      var date = entry.title.$t.replace(/(\d+).(\d+).(\d+)/, '$3-$2-$1');
       var latestKey = null;
       var fields = entry.content.$t.split(',').reduce(function (fields, field) {
         var keyValue = field.split(':');
