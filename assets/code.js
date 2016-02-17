@@ -20,7 +20,7 @@ setIframeSource(refs.selector.selectedOptions[0]);
  * Set reference based on the provided option and environement.
  */
 function setIframeSource (target) {
-  var pageUrl = '/pages/' + target.value;
+  var pageUrl = '/pages/' + target.value + '/';
   if (window.location.hostname === 'opentechschool.github.io') {
     pageUrl = '/web-frontend-colearning-metrics' + pageUrl;
   }
