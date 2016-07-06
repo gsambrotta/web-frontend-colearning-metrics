@@ -28,12 +28,15 @@ function getData (callback) {
           keyValue[1] = keyValue[0];
           keyValue[0] = latestKey;
         }
-        latestKey = keyValue[0].trim();
-        var value = isNaN(keyValue[1]) ? keyValue.slice(1).join(':').trim() : parseInt(keyValue[1], 10);
-        if (fields[latestKey]) {
-          value = [fields[latestKey]] + ', ' + value;
+        var entry = keyValue[0];
+        if (entry) {
+          latestKey = entry.trim();
+          var value = isNaN(keyValue[1]) ? keyValue.slice(1).join(':').trim() : parseInt(keyValue[1], 10);
+          if (fields[latestKey]) {
+            value = [fields[latestKey]] + ', ' + value;
+          }
+          fields[latestKey] = value;
         }
-        fields[latestKey] = value;
         return fields
       }, {});
       fields.date = new Date(date);
