@@ -23,3 +23,7 @@ thead td {
 table td {
   text-align: center;
 }
+
+table td:not(:first-child) {
+  border-left: 1px dashed grey;
+}
