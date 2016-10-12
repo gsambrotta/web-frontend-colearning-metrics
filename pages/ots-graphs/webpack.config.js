@@ -28,7 +28,7 @@ const config = {
     ],
 
     loaders: [
-      { test: /\.jsx?/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ },
+      { test: /\.jsx?/, loaders: ['babel'], exclude: /node_modules/ },
       { test: /\.scss$/, loaders: ['style', 'css', 'sass'] },
       { test: /\.(jpe?g|png|gif|svg)$/i, loaders: [ 'url?limit=8192', 'img'] },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
